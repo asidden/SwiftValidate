@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ValidatorBetween<TYPE: SignedNumber>: ValidatorProtocol, ValidationAwareProtocol {
+public class ValidatorBetween<TYPE: SignedNumeric & Comparable>: ValidatorProtocol, ValidationAwareProtocol {
     
     /// allows the value to be nil
     public var allowNil: Bool = true

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ValidatorGreaterThan<TYPE: SignedNumber>: ValidatorProtocol, ValidationAwareProtocol {
+public class ValidatorGreaterThan<TYPE: SignedNumeric & Comparable>: ValidatorProtocol, ValidationAwareProtocol {
     
     /// nil is allowed
     public var allowNil: Bool = true
